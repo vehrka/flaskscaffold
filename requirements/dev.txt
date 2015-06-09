@@ -1,3 +1,5 @@
 -r common.txt
 behave==1.2.5
 ipython==3.1.0
+requests==2.7.0
+selenium==2.45.0

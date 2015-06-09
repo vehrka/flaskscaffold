@@ -1,5 +1,9 @@
-from app import create_app
+from selenium import webdriver
 
-def before_feature(context, feature):
-    oapp = create_app('testing')
-    context.client = oapp.test_client()
+
+def before_all(context):
+    context.browser = webdriver.Chrome()
+
+
+def after_all(context):
+    context.browser.quit()

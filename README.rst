@@ -3,20 +3,24 @@ Aplicación mínima Flask
 ========================
 
 :titulo: Aplicación mínima Flask
-:version: v0.0
+:version: v1.0
 :autor: pferrer
 :fecha: 2015-06-03
+
 
 Introducción
 ============
 
 Ejemplo de aplicación mínima (scaffold) de Flask
 
+
 Archivos
 ========
 
 Archivos de la aplicación::
 
+
+    .
     ├── app
     │   ├── __init__.py
     │   ├── main
@@ -26,16 +30,18 @@ Archivos de la aplicación::
     │       ├── base.html
     │       └── index.html
     ├── config.py
+    ├── EXPORTME_example.cfg
     ├── features
+    │   ├── 01_min.feature
     │   ├── environment.py
-    │   ├── min.feature
     │   └── steps
-    │       └── min_steps.py
+    │       └── 01_min_steps.py
     ├── manage.py
     ├── README.rst
     └── requirements
         ├── common.txt
         └── dev.txt
+
 
 :app/__init__.py: Inicialización del paquete principal
 :app/main/__init__.py: Inicialización del componente main
@@ -43,9 +49,10 @@ Archivos de la aplicación::
 :app/templates/base.html: Plantilla Base
 :app/templates/index.html: Plantilla del index.html
 :config.py: Configuraciones de la aplicación
+:EXPORTME_example.cfg: Ejemplo de configuración por archivo de variables de entorno
+:features/01_min.feature: Definición de escenarios
 :features/environment.py: Archivo de entorno de test con Behave
-:features/min.feature: Definición de escenarios
-:features/steps/min_steps.py: Pasos para la definición min
+:features/steps/01_min_steps.py: Pasos para la definición min
 :manage.py: Herramienta de gestión de la aplicación
 :README.rst: Este mismo archivo
 :requirements/common.txt: Archivo con los requisitos del virtualenv
