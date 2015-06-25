@@ -3,9 +3,9 @@ Aplicación mínima Flask
 ========================
 
 :titulo: Aplicación mínima Flask
-:version: v1.0
+:version: v1.1
 :autor: pferrer
-:fecha: 2015-06-03
+:fecha: 2015-06-25
 
 
 Introducción
@@ -31,6 +31,7 @@ Archivos de la aplicación::
     │       └── index.html
     ├── config.py
     ├── EXPORTME_example.cfg
+    ├── fabfile.py
     ├── features
     │   ├── 01_min.feature
     │   ├── environment.py
@@ -50,6 +51,7 @@ Archivos de la aplicación::
 :app/templates/index.html: Plantilla del index.html
 :config.py: Configuraciones de la aplicación
 :EXPORTME_example.cfg: Ejemplo de configuración por archivo de variables de entorno
+:fabfile.py: Archivo de comandos de Fabric
 :features/01_min.feature: Definición de escenarios
 :features/environment.py: Archivo de entorno de test con Behave
 :features/steps/01_min_steps.py: Pasos para la definición min
