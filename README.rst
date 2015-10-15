@@ -3,9 +3,9 @@ Aplicación mínima Flask
 ========================
 
 :titulo: Aplicación mínima Flask
-:version: v1.1
+:version: v2.0
 :autor: pferrer
-:fecha: 2015-06-25
+:fecha: 2015-10-15
 
 
 Introducción
@@ -19,13 +19,13 @@ Archivos
 
 Archivos de la aplicación::
 
-
     .
     ├── app
     │   ├── __init__.py
     │   ├── main
     │   │   ├── __init__.py
     │   │   └── views.py
+    │   ├── models.py
     │   └── templates
     │       ├── base.html
     │       └── index.html
@@ -43,10 +43,10 @@ Archivos de la aplicación::
         ├── common.txt
         └── dev.txt
 
-
 :app/__init__.py: Inicialización del paquete principal
 :app/main/__init__.py: Inicialización del componente main
 :app/main/views.py: Vistas del componente main
+:app/models.py: Modelos de la base de datos
 :app/templates/base.html: Plantilla Base
 :app/templates/index.html: Plantilla del index.html
 :config.py: Configuraciones de la aplicación
