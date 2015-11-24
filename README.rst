@@ -4,7 +4,7 @@ Aplicación mínima Flask
 
 :titulo: Aplicación mínima Flask
 :version: v2.1
-:autor: pferrer
+:autor: vehrka
 :fecha: 2015-11-24
 
 
