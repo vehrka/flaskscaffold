@@ -17,7 +17,7 @@ def test(ctx):
 def rundev(ctx):
     """Sets the dev environment and launches the app"""
     exportcfg = os.path.join(DIR, 'EXPORTME.cfg')
-    appconf = {'APP_CONFIG': exportcfg}
+    appconf = {'APP_CONFIG': exportcfg, 'FLASK_CONFIG': 'development'}
     os.environ.update(appconf)
     apprun(ctx)
 
@@ -26,7 +26,7 @@ def rundev(ctx):
 def shelldev(ctx):
     """Sets the dev environment and launches the shell"""
     exportcfg = os.path.join(DIR, 'EXPORTME.cfg')
-    appconf = {'APP_CONFIG': exportcfg}
+    appconf = {'APP_CONFIG': exportcfg, 'FLASK_CONFIG': 'development'}
     os.environ.update(appconf)
     shellrun(ctx)
 
