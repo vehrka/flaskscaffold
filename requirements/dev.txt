@@ -4,3 +4,4 @@ ipython==3.1.0
 requests==2.7.0
 selenium==2.45.0
 invoke==0.11.1
+semver==2.4.2
