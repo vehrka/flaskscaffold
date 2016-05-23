@@ -37,3 +37,37 @@ def apprun(ctx):
 
 def shellrun(ctx):
     ctx.run('python manage.py shell')
+
+
+@task
+def version_bump(ctx, major=False, minor=False, patch=False, version=''):
+
+    """Makes the version bump in the required files"""
+
+    import semver
+
+    f = open("VERSION", "r")
+    fversion = f.readline().strip('\n')
+    f.close()
+
+    if version:
+        nversion = version
+    else:
+        version = fversion
+
+        if major:
+            nversion = semver.bump_major(version)
+        elif minor:
+            nversion = semver.bump_minor(version)
+        elif patch:
+            nversion = semver.bump_patch(version)
+        else:
+            print("No version change")
+
+    print("Old version {} New version {}".format(fversion, nversion))
+
+    ctx.run("sed -i -e 's/:version: .*/:version: {}/' README.rst".format(nversion))
+
+    f = open("VERSION", "w")
+    f.write(nversion)
+    f.close()

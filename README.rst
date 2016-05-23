@@ -3,7 +3,7 @@ Aplicación mínima Flask
 ========================
 
 :titulo: Aplicación mínima Flask
-:version: v2.1
+:version: 2.1.2
 :autor: vehrka
 :fecha: 2015-11-24
 
