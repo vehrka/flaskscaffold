@@ -42,6 +42,8 @@ def shellrun(ctx):
 @task
 def version_bump(ctx, major=False, minor=False, patch=False, version=''):
 
+    """Makes the version bump in the required files"""
+
     import semver
 
     f = open("VERSION", "r")
